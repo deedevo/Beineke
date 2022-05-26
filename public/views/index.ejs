@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Beineke - Main page</title>
+	<script src="https://kit.fontawesome.com/d9e7c4d4b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="../img/logo2.png" alt="Logo">
+			</div>
+			<div class="search" >
+				<form method="post" action="/books">
+				    <input type="text" name="searchText" placeholder="Книга, серия, автор, жанр, издательство">
+				    <button type="submit"></button>
+				</form>
+			</div>
+			<div class="menu">
+				<a href="#">
+					<img src="../img/mybks.png" alt="My books">
+				</a>
+				<a href="signup">
+					<img src="../img/logn.png" alt="sign_in" id="login">
+				</a>
+			</div>
+		</nav>
+		<div class="cat">
+			<div class="container">		
+				<ul class="catm">
+					<div class="dropdown">
+					  <button onclick="myFunction()" class="dropbtn">Жанры</button>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="#">Детективы</a>
+					    <a href="#">Классика</a>
+					    <a href="#">Фантастика</a>
+					  </div>
+					</div>
+					<li><a href="new">Новинки</a></li>
+					<li><a href="popular">Популярное</a></li>
+					<li><a href="/audiobooks">Аудиокниги</a></li>
+					<li><a href="/comics">Комиксы</a></li>
+					<li><a href="#">Что почитать?</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="cbg1">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+					<div class="cbg">
+						<h1>Хиты, проверенные временем</h1>
+						<img src="../img/gbok1.png" class="d-block w-100" alt="...">
+					</div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="..." class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="..." class="d-block w-100" alt="...">
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="books">
+			<div class="container">
+				<div class="books">
+				<h1 id="bst">Бестселлеры</h1>
+				<div class="shelf1" id="shelf22">
+					<div class="b1">
+						<img src="../img/iki.png" alt="Икигай">
+						<a href="#">
+							<p>Кен Моги</p>
+						   	<h5>Икигай</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/begz.png" alt="Бегущий за ветром">
+						<a href="#">
+							<p>Халед Хоссейни</p>
+						   	<h5>Бегущий за ветром</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/tsel.png" alt="Целеустрем-лённая жизнь">
+						<a href="#">
+							<p>Рик Уоррен</p>
+						   	<h5>Целеустрем-лённая жизнь</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/pil.png" alt="Жизнь Пи">
+						<a href="#">
+							<p>Янн Мартел</p>
+						   	<h5>Жизнь Пи</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/pyat.png" alt="Пятьдесят оттенков серого">
+						<a href="#">
+							<p>Эл Джеймс</p>
+						  	<h5>Пятьдесят оттенков серого</h5>
+						</a>
+					</div>
+				</div>
+				<div class="shelf1" id="shelf21">
+					<div class="b1">
+						<img src="../img/vins.png" alt="">
+						<a href="">
+							<p>Джон Грин</p>
+						   	<h5>Виноваты звезды</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/hizh.png" alt="">
+						<a href="">
+							<p>Уильям Пол Янг</p>
+						   	<h5>Хижина размышления</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/hung.png" alt="">
+						<a href="">
+							<p>Сьюзен Коллинз</p>
+						   	<h5>Голодные игры</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/harr.png" alt="">
+						<a href="">
+							<p>Джоан Роулинг</p>
+						   	<h5>Гарри Потер и Принц-полукровка</h5>
+						</a>
+					</div>
+					<div class="b1">
+						<img src="../img/dav.png" alt="">
+						<a href="">
+							<p>Дэн Браун</p>
+						   	<h5>Код да Винчи</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section>
+		<div class="more_books">
+			<div class="container">
+				<div class="bookshelf">
+					<div class="descr">
+						<h2 class="hmore_b">Наслаждайтесь 10,000+ бесплатными книгами</h2>
+						<p class="des">Прочтите более десяти тысяч книг известных писателей со всего мира.
+							От всеми любимой классики до уникальных странностей - здесь найдется что-то для каждого.</p>
+					</div>
+					<img src="../img/lapt.png" alt="" class="desimg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="bookshelf">
+				<img src="../img/phone.png" alt="" class="phone">
+				<div class="descr">
+					<img src="../img/audio.png" alt="" class="audiop">
+					<h2 class="hmore_b1">Неудобно читать?</h2>
+					<p class="des1">Не проблема! Вы можете слушать книги в метро, в автобусе и на улице.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="shar">
+			<div class="container">
+				<div class="shareshelf">
+					<img src="../img/share.png" alt="" class="sharimg">
+					<h2>Хотите поделиться своим произведением?</h2>
+					<p>Вы можете выложить свое произведение на сайт в формате FB2</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="bookshelf">
+				<div class="rec">
+					<h2 class="rec_h">Не знаете что почитать?</h2>
+					<p class="rec_des">У нас есть раздел "Что почитать?", где вы можете увидеть подборку рекомендуемых нами книг</p>
+				</div>
+				<img src="../img/pc.png" alt="" class="pc">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="offshelf">
+			<div class="container">
+				<div class="bookshelf">
+					<img src="../img/pl.png" alt="" class="pl">
+					<div class="descr1">
+						<h2 class="off_h">Читать оффлайн</h2>
+						<p class="off_des">Благодаря тому что мы оставляем книги в нескольких форматах,
+							вы можете выбрать лучший для себя и читать или слушать книгу просто скачав на свое устройство</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="foot_menu">
+			<ul class="men1">
+				<li><a href="#">О Бейнеке</a></li>
+				<li><a href="#">Библиотека</a></li>
+				<li><a href="#">Опубликовать книгу</a></li>
+				<li><a href="#">Помощь</a></li>
+			</ul>
+			<ul class="men2">
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Правовая информация</a></li>
+				<li><a href="#">Партнерам</a></li>
+			</ul>
+		</div>
+		<div class="install">
+			<a href=""><img src="../img/apps.png" alt=""></a>
+			<a href=""><img src="../img/goog.png" alt=""></a>
+		</div>
+		<div class="social">
+			<a href=""><img src="..//img/fc.png" alt=""></a>
+			<a href=""><img src="../img/vk.png" alt=""></a>
+			<a href=""><img src="../img/tw.png" alt=""></a>
+			<a href=""><img src="../img/inst.png" alt=""></a>
+			<a href=""><img src="../img/wh.png" alt=""></a>
+			<a href=""><img src="../img/tt.png" alt=""></a>
+			<a href=""><img src="../img/yt.png" alt=""></a>
+		</div>
+		<div class="coppyr">
+			<img src="../img/cp.png" alt="">
+		</div>
+	</footer>
+	<script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="../js/script.js"></script>
+	</script>
+</body>
+</html>

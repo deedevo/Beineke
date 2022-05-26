@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Популярное</title>
+	<script src="https://kit.fontawesome.com/d9e7c4d4b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="home">
+				<div class="logo">
+					<img src="../img/logo2.png" alt="Logo">
+				</div>
+			</a>
+			<div class="search">
+				<form>
+				    <input type="text" placeholder="Книга, серия, автор, жанр, издательство">
+				    <button type="submit"></button>
+				</form>
+			</div>
+			<div class="menu">
+				<a href="#">
+					<img src="../img/mybks.png" alt="My books">
+				</a>
+				<a href="signup">
+					<img src="../img/logn.png" alt="sign_in" id="login">
+				</a>
+			</div>
+		</nav>
+		<div class="cat">
+			<div class="container">		
+				<ul class="catm">
+					<div class="dropdown">
+					  <button onclick="myFunction()" class="dropbtn">Жанры</button>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="#">Детективы</a>
+					    <a href="#">Классика</a>
+					    <a href="#">Фантастика</a>
+					  </div>
+					</div>
+					<li><a href="new">Новинки</a></li>
+					<li><a href="popular">Популярное</a></li>
+					<li><a href="/audiobooks">Аудиокниги</a></li>
+					<li><a href="/comics">Комиксы</a></li>
+					<li><a href="#">Что почитать?</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section style="background: #E7AF6E; margin: 0; padding: 10px 0 0 0;">
+		<div class="back">
+			<div class="waitrel">
+			<div class="container">
+				<h1 id="newrelh">Популярное среди пользователей</h1>
+				<div class="newbooks" id="container">
+					<div class="row bookshelf1">
+						<div class="col b1">
+							<img src="../img/popular/garr.png" alt="Икигай">
+							<a href="#">
+								<p>Джоан Роулинг</p>
+							   	<h5>Гарри Поттер и Фиолософский камень</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/vlast.png" alt="Икигай">
+							<a href="#">
+								<p>Дж. Р. Р. Толкин</p>
+							   	<h5>Властелин колец</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/alhim.png" alt="Икигай">
+							<a href="#">
+								<p>Пауло Коэльо</p>
+							   	<h5>Алхимик</h5>
+							</a>
+						</div>
+						<div class=" col b1">
+							<img src="../img/popular/codda.png" alt="Икигай">
+							<a href="#">
+								<p>Дэн Браун</p>
+							   	<h5>Код да Винчи</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/sumer.png" alt="Икигай">
+							<a href="#">
+								<p>Стефани Майер</p>
+							   	<h5>Сумерки</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/unvet.png" alt="Икигай">
+							<a href="#">
+								<p>Маргарет Мит...</p>
+							   	<h5>Унесенные ветром</h5>
+							</a>
+						</div>
+					</div>
+					<div class="row bookshelf1">
+						<div class="col b1">
+							<img src="../img/popular/dumai.png" alt="Икигай">
+							<a href="#">
+								<p>Напалеон Хилл</p>
+							   	<h5>Думай и богатей</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/dnevn.png" alt="Икигай">
+							<a href="#">
+								<p>Анна Франк</p>
+							   	<h5>Дневник Анны Франк</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/solov.png" alt="Икигай">
+							<a href="#">
+								<p>Кристина Генн</p>
+							   	<h5>Соловей</h5>
+							</a>
+						</div>
+						<div class=" col b1">
+							<img src="../img/popular/velik.png" alt="Икигай">
+							<a href="#">
+								<p>Ф.С. Фиджеральд</p>
+							   	<h5>Великий Гетсби</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/chet.png" alt="Икигай">
+							<a href="#">
+								<p>Дон Мигель Руис</p>
+							   	<h5>Четыре соглашения</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/sheg.png" alt="Икигай">
+							<a href="#">
+								<p>Донна Тарт</p>
+							   	<h5>Щегол</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section style="background: #E7AF6E; margin: 0; padding: 10px 0 0 0;">
+		<div class="cbg15">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+					<div class="cbg31">
+						<img src="../img/gord.png" class="d-block w-100" alt="...">
+						<div class="cardescr1">
+							<h1>Гордость и Предубеждение</h1>
+							<p>Провинциальное семейство, что называется, «средней руки»: отец семейства, мистер Беннет, — вполне благородных кровей...</p>
+						</div>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+				    <div class="cbg32">
+			    		<img src="../img/temn.png" class="d-block w-100" alt="...">
+			    		<div class="cardescr1">
+			    			<h1>Темные начала</h1>
+			    			<p>"Северное сияние" - первая книга трилогии "Темные начала". Поиски пропавшего друга приводят Лиру и ее деймона Пантелеймона на...</p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="carousel-item">
+			      	<div class="cbg33">
+			    		<img src="../img/dugl.png" class="d-block w-100" alt="...">
+			    		<div class="cardescr1">
+			    			<h1>Автостопом по галактике</h1>
+			    			<p>Роман повествует о приключениях невезучего англичанина Артура Дента, который со своим другом Фордом Префектом (уроженцем...</p>
+			    		</div>
+			    	</div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		</div>
+	</section>
+	<section style="margin-bottom: 120px;">
+		<div class="waitrel">
+			<div class="container">
+				<h1 id="newrelh">Новое на Бейнеке</h1>
+				<div class="newbooks" id="container">
+					<div class="row bookshelf1">
+						<div class="col b1">
+							<img src="../img/popular/ksebe.png" alt="Икигай">
+							<a href="#">
+								<p>Ольга Примаченко</p>
+							   	<h5>К себе нежно</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/zemlya.png" alt="Икигай">
+							<a href="#">
+								<p>Фёдор Нечитайло</p>
+							   	<h5>Земля королей. Червовый том</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/blago.png" alt="Икигай">
+							<a href="#">
+								<p>Мосян Тунсю</p>
+							   	<h5>Благославление небожителей</h5>
+							</a>
+						</div>
+						<div class=" col b1">
+							<img src="../img/popular/will.png" alt="Икигай">
+							<a href="#">
+								<p>Марк Мэнсон, Уилл...</p>
+							   	<h5>Will. Чему может научить нас пр...</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/pesn.png" alt="Икигай">
+							<a href="#">
+								<p>Фрэнсис Кэль</p>
+							   	<h5>Песнь Сорокопута</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/nelub.png" alt="Икигай">
+							<a href="#">
+								<p>Екатерина Орлова</p>
+							   	<h5>Нелюбимая</h5>
+							</a>
+						</div>
+					</div>
+					<div class="row bookshelf1">
+						<div class="col b1">
+							<img src="../img/popular/huli.png" alt="Икигай">
+							<a href="#">
+								<p>Эмилия Грин</p>
+							   	<h5>Хулиган</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/bezup.png" alt="Икигай">
+							<a href="#">
+								<p>Лия Арден</p>
+							   	<h5>Безупречная Луна</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/drev.png" alt="Икигай">
+							<a href="#">
+								<p>Сергей Тармашев</p>
+							   	<h5>Древний. Предистория...</h5>
+							</a>
+						</div>
+						<div class="col b1" id="b12">
+							<img src="../img/popular/obl.png" alt="Икигай">
+							<a href="#">
+								<p>Иван Гончаров</p>
+							   	<h5>Обломов</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/hochu.png" alt="Икигай">
+							<a href="#">
+								<p>Михаил Лабковский</p>
+							   	<h5>Хочу и буду принять себя...</h5>
+							</a>
+						</div>
+						<div class="col b1">
+							<img src="../img/popular/bts.png" alt="Икигай">
+							<a href="#">
+								<p>Тамар Херман</p>
+							   	<h5>BTS. Кровь пот и слезы. История...</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<footer>
+		<div class="foot_menu">
+			<ul class="men1">
+				<li><a href="#">О Бейнеке</a></li>
+				<li><a href="#">Библиотека</a></li>
+				<li><a href="#">Опубликовать книгу</a></li>
+				<li><a href="#">Помощь</a></li>
+			</ul>
+			<ul class="men2">
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Правовая информация</a></li>
+				<li><a href="#">Партнерам</a></li>
+			</ul>
+		</div>
+		<div class="install">
+			<a href=""><img src="../img/apps.png" alt=""></a>
+			<a href=""><img src="../img/goog.png" alt=""></a>
+		</div>
+		<div class="social">
+			<a href=""><img src="../img/fc.png" alt=""></a>
+			<a href=""><img src="../img/vk.png" alt=""></a>
+			<a href=""><img src="../img/tw.png" alt=""></a>
+			<a href=""><img src="../img/inst.png" alt=""></a>
+			<a href=""><img src="../img/wh.png" alt=""></a>
+			<a href=""><img src="../img/tt.png" alt=""></a>
+			<a href=""><img src="../img/yt.png" alt=""></a>
+		</div>
+		<div class="coppyr">
+			<img src="../img/cp.png" alt="">
+		</div>
+	</footer>
+	<script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="../js/script.js"></script>
+	</script>
+</body>
+</html>

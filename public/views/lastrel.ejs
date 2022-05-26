@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Новинки</title>
+	<script src="https://kit.fontawesome.com/d9e7c4d4b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+	<nav>
+		<a href="home">
+			<div class="logo">
+				<img src="img/logo2.png" alt="Logo">
+			</div>
+		</a>
+		<div class="search">
+			<form>
+				<input type="text" placeholder="Книга, серия, автор, жанр, издательство">
+				<button type="submit"></button>
+			</form>
+		</div>
+		<div class="menu">
+			<a href="#">
+				<img src="../img/mybks.png" alt="My books">
+			</a>
+			<a href="signup">
+				<img src="../img/logn.png" alt="sign_in" id="login">
+			</a>
+		</div>
+	</nav>
+	<div class="cat">
+		<div class="container">
+			<ul class="catm">
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">Жанры</button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#">Детективы</a>
+						<a href="#">Классика</a>
+						<a href="#">Фантастика</a>
+					</div>
+				</div>
+				<li><a href="new">Новинки</a></li>
+				<li><a href="popular">Популярное</a></li>
+				<li><a href="#">Аудиокниги</a></li>
+				<li><a href="#">Комиксы</a></li>
+				<li><a href="#">Что почитать?</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<section style="background: #E7AF6E; margin: 0; padding: 10px 0 0 0;">
+	<div class="waitrel">
+		<div class="container">
+			<h1 id="newrelh">Ожидаемые книги</h1>
+			<div class="newbooks" id="container">
+
+				<div class="row bookshelf1">
+					<div class="col b1">
+						<img src="../img/newrel/stiv.png" alt="Икигай">
+						<a href="#">
+							<p>Стивен Кинг</p>
+							<h5>Билли Саммерс</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/kar.png" alt="Икигай">
+						<a href="#">
+							<p>Карен Уайт</p>
+							<h5>Гости на Саут-Бэттери</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/daym.png" alt="Икигай">
+						<a href="#">
+							<p>Дэймон Галгат</p>
+							<h5>Обещание</h5>
+						</a>
+					</div>
+					<div class=" col b1">
+						<img src="../img/newrel/pere.png" alt="Икигай">
+						<a href="#">
+							<p>Джонатан Франзен</p>
+							<h5>Перекрёстки</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/code.png" alt="Икигай">
+						<a href="#">
+							<p>Джон Маррс</p>
+							<h5>Code. Носители</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/sal.png" alt="Икигай">
+						<a href="#">
+							<p>Салли Руни</p>
+							<h5>Прекрасный мир, где же ты</h5>
+						</a>
+					</div>
+				</div>
+				<div class="row bookshelf1">
+					<div class="col b1">
+						<img src="../img/newrel/vstor.png" alt="Икигай">
+						<a href="#">
+							<p>Ханья Янагихара</p>
+							<h5>В сторону рая</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/ptic.png" alt="Икигай">
+						<a href="#">
+							<p>Энтони Дорр</p>
+							<h5>Птичий город за облаками</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/plot.png" alt="Икигай">
+						<a href="#">
+							<p>Джин Ханфф</p>
+							<h5>Сюжет</h5>
+						</a>
+					</div>
+					<div class="col b1" id="b12">
+						<img src="../img/newrel/ptici.png" alt="Икигай">
+						<a href="#">
+							<p>Иви Уайлд</p>
+							<h5>Птицы</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/vera.png" alt="Икигай">
+						<a href="#">
+							<p>Анна Свард</p>
+							<h5>Вера</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/vozvr.png" alt="Икигай">
+						<a href="#">
+							<p>Кристиан Банг Фосс</p>
+							<h5>Возвращение Фрэнка</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+</section>
+<section>
+	<div class="waitrel">
+		<div class="container">
+			<h1 id="newrelh">Новое на Бейнеке</h1>
+			<div class="newbooks" id="container">
+				<div class="row bookshelf1">
+					<div class="col b1">
+						<img src="../img/newrel/labo.png" alt="Икигай">
+						<a href="#">
+							<p>Михаил Левицкий</p>
+							<h5>Лаборатория химических историй</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/pamya.png" alt="Икигай">
+						<a href="#">
+							<p>Марсель Пруст</p>
+							<h5>Памяти убитых церквей</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/golub.png" alt="Икигай">
+						<a href="#">
+							<p>Павел Крусанов</p>
+							<h5>Голуби</h5>
+						</a>
+					</div>
+					<div class=" col b1">
+						<img src="../img/newrel/pereg.png" alt="Икигай">
+						<a href="#">
+							<p>Эдуард Трымбовецкий</p>
+							<h5>Переговоры за минуту</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/tsar.png" alt="Икигай">
+						<a href="#">
+							<p>Энн Райс</p>
+							<h5>Царица проклятых</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/bulv.png" alt="Икигай">
+						<a href="#">
+							<p>Герман Канабаев</p>
+							<h5>Бульвар рядом с улицей Гоголя</h5>
+						</a>
+					</div>
+				</div>
+				<div class="row bookshelf1">
+					<div class="col b1">
+						<img src="../img/newrel/antr.png" alt="Икигай">
+						<a href="#">
+							<p>Василина Орлова</p>
+							<h5>Антропология повседневности</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/evan.png" alt="Икигай">
+						<a href="#">
+							<p>Аркадий Вайнер, Г...</p>
+							<h5>Евангелие от Палача</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/zagov.png" alt="Икигай">
+						<a href="#">
+							<p>Александр Бренер</p>
+							<h5>Заговор Голово- ногих</h5>
+						</a>
+					</div>
+					<div class="col b1" id="b12">
+						<img src="../img/newrel/doch.png" alt="Икигай">
+						<a href="#">
+							<p>Вонда Макинтайр</p>
+							<h5>Дочь Короля</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/neuch.png" alt="Икигай">
+						<a href="#">
+							<p>Максим Кронгауз, Е...</p>
+							<h5>Неучебник по русскому языку. Орфография</h5>
+						</a>
+					</div>
+					<div class="col b1">
+						<img src="../img/newrel/kinoms.png" alt="Икигай">
+						<a href="#">
+							<p>Абрам Ильич Рей...</p>
+							<h5>Киномысль русского зарубежья...</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="cbg2">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="cbg3">
+						<img src="../img/lev.png" class="d-block w-100" alt="..." id="pcarimg">
+						<div class="cardescr">
+							<h1>Гордость и Предубеждение</h1>
+							<p>Каким на самом деле был Лев Толстой? История жизни великого писателя - а еще сложного, мятущегося, вечно ищущего человека -...</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="cbg4">
+						<img src="../img/chud.png" class="d-block w-100" alt="..." id="pcarimg">
+						<div class="cardescr">
+							<h1>Чудовища доктора Эйнштейна</h1>
+							<p>Эта книга британского астрономого Криси Импи развеивает самые распастраненные заблуждения о черных дырах (нет, это не космические...</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="cbg5">
+						<img src="../img/fedi.png" class="d-block w-100" alt="..." id="pcarimg">
+						<div class="cardescr">
+							<h1>Федиатрия. Что делать, если у вас ребенок</h1>
+							<p>Новое, существенно дополненное издание книги московского педиатра Федора Катасонова, в которое вошли новые главы о телемедицины...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="foot_menu">
+		<ul class="men1">
+			<li><a href="#">О Бейнеке</a></li>
+			<li><a href="#">Библиотека</a></li>
+			<li><a href="#">Опубликовать книгу</a></li>
+			<li><a href="#">Помощь</a></li>
+		</ul>
+		<ul class="men2">
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#">Правовая информация</a></li>
+			<li><a href="#">Партнерам</a></li>
+		</ul>
+	</div>
+	<div class="install">
+		<a href=""><img src="../img/apps.png" alt=""></a>
+		<a href=""><img src="../img/goog.png" alt=""></a>
+	</div>
+	<div class="social">
+		<a href=""><img src="../img/fc.png" alt=""></a>
+		<a href=""><img src="../img/vk.png" alt=""></a>
+		<a href=""><img src="../img/tw.png" alt=""></a>
+		<a href=""><img src="../img/inst.png" alt=""></a>
+		<a href=""><img src="../img/wh.png" alt=""></a>
+		<a href=""><img src="../img/tt.png" alt=""></a>
+		<a href=""><img src="../img/yt.png" alt=""></a>
+	</div>
+	<div class="coppyr">
+		<img src="../img/cp.png" alt="">
+	</div>
+</footer>
+<script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+</script>
+</body>
+</html>
